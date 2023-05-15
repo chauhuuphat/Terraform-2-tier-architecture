@@ -54,7 +54,7 @@ module "database" {
   allocated_storage           = 5
   storage_type                = "gp2"
   engine                      = "mysql"
-  engine_version              = "5.7"
+  engine_version              = "8.0"
   instance_class              = "db.t2.micro"
   vpc_security_group_ids      = module.network_flow.db_sg_id
   parameter_group_name        = "default.mysql5.7"
